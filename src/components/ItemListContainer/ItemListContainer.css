@@ -1,0 +1,15 @@
+
+
+
+.aviso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.aviso p{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--color-titulos);
+}

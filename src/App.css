@@ -1,5 +1,13 @@
 
 
-body{
-    box-sizing: border-box; margin: 0;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
+:root {
+    --main-color: rgb(67, 67, 255);
+    --color-titulos: #19264a; 
+    --verde: rgb(41, 216, 132);
+    --rojo: rgb(255, 68, 31);}

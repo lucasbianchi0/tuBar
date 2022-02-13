@@ -1,7 +1,12 @@
 
 
+
+
+
 .container-nav{
     background-color: rgba(254, 156, 86, 1);
+    background-color: rgba(255, 85, 102, 1);
+    background-color: rgb(226, 226, 226);
 }
 
 
@@ -17,10 +22,12 @@
 
 .estructura-Navbar div p{
 
-    -webkit-text-stroke: 0.4px rgb(27, 27, 27);
+    /* -webkit-text-stroke: 0.4px rgb(27, 27, 27); */
     color: transparent; 
     color: white;
+    color: rgba(255, 85, 102, 1);
     font-size: 36px;
+    font-weight: 600;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -29,6 +36,23 @@
     text-decoration: none;
     margin: 0 10px;
     color: white;
+    color: var(--color-titulos);
     font-size: 22px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    
+}
+
+.navbar-right{
+    display: flex;
+}
+
+.navbar-right div{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 15px;
+}
+
+.carrito{
+  
 }
