@@ -7,6 +7,7 @@
 }
 
 :root {
+    --our-color:rgba(255, 85, 102, 1);
     --main-color: rgb(67, 67, 255);
     --color-titulos: #19264a; 
     --verde: rgb(41, 216, 132);

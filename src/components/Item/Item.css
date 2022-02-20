@@ -1,0 +1,60 @@
+
+.item-style{
+    margin-top: 50px;
+    width: 350px;
+    height: 580px;
+    padding: 30px 8px;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.item-style h2 p{
+ 
+}
+
+.item-style h2 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.item-style p {
+    margin: 15px 0;
+}
+
+.precio{
+    color: var(--verde);
+    font-weight: 600;
+}
+
+.btn-agregar{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.imagen-item{
+    width: 330px;
+    height: 300px;
+}
+
+.heart-edit{
+    color: var(--our-color);
+}
+.estructura-botones-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.estructura-contador-item{
+    display: flex;
+}
+
+.estructura-contador-item p{
+    margin: 0 10px;
+    font-size: 18;
+    font-weight: 500;
+}
