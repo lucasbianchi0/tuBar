@@ -12,21 +12,24 @@ const ItemListContainer = () => {
       
 
   return (
-    <div className='container-itemlist'>
-     
-       {catalogo.length === 0 ?
-       <>
-       <p>Cargando...</p>
-       </>
-       :
-       catalogo.map((infoLocal)=>{
-         return(
-            <div className="produc " key={infoLocal.id}>
-                <Item data={infoLocal}/>
-            </div>
-       )
-       })}
-     
+    <div className='structure-itemlist'>
+      <div className='container-itemlist'>
+
+      
+        {catalogo.length === 0 ?
+        <>
+        <p>Cargando...</p>
+        </>
+        :
+        catalogo.map((infoLocal)=>{
+          return(
+              <div className="produc " key={infoLocal.id}>
+                  <Item data={infoLocal}/>
+              </div>
+        )
+        })}
+      
+      </div>
     </div>
   )
 }
