@@ -1,0 +1,57 @@
+.structure-containerdetail{
+    background-color: #fdfbf9;
+}
+
+.itemDetail-structure{
+    padding: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.imagen-itemdetail{
+    width: 650px;
+    height: auto;
+    max-height: 500px;
+}
+
+.item-detail-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-detail-text h1{
+    font-size: 30px
+}
+
+.item-detail-text p{
+    margin-top: 30px;
+    font-size: 24px;
+    max-width: 400px;
+}
+
+.precio-item-detail{
+    color: var(--verde);
+    margin-bottom: 40px;
+}
+
+.heart-edit{
+    color: var(--our-color);
+}
+.estructura-botones-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.estructura-contador-item{
+    display: flex;
+}
+
+.estructura-contador-item p{
+    margin: 0 10px;
+    font-size: 18;
+    font-weight: 500;
+}

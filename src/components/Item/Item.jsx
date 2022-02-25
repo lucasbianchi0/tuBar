@@ -4,6 +4,8 @@ import './Item.css'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
+import { Link } from 'react-router-dom';
+import { localidadesBaseDeDatos } from '../Datos/Productos';
 
 
 
@@ -32,7 +34,10 @@ const Item = ({data}) => {
             <p>{data.descripcion}</p>
             <p className='precio'>{data.precio}</p>
             <div className='estructura-botones-item'>
-                <button data-id={data.id} onClick={reservar} className='btn-agregar'>Reservar</button>
+            
+                <Link to={`/items/${data.id}`}>
+                    <button data-id={data.id} onClick={reservar} className='btn-agregar'>Reservar</button>
+                </Link>
                 <div className='estructura-contador-item'> 
                     <p>{contar}</p>
                     <p>{heart}</p>

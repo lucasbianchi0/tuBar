@@ -5,11 +5,13 @@
     height: 580px;
     padding: 30px 8px;
     background-color: rgb(221, 221, 221);
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%);
 }
 
 .item-style h2 p{

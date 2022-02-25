@@ -1,6 +1,8 @@
 import React from 'react';
 import './NavBar.css';
 import CartWidget from '../Ui/Atoms/CartWidget/CartWidget';
+import 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -13,9 +15,9 @@ const NavBar = () => {
         {/* derecha */}
         <div className='navbar-right'>
           <ul>
-              <a href="/">Catalogo</a>
-              <a href="/">Reservas</a>
-              <a href="/">Nosotros</a>
+            <Link to="/">Catalogo</Link>
+            <Link to="/home">Home</Link>
+            <Link to="/contacto">Contacto</Link>
           </ul>
           <div><CartWidget /></div>
         </div>
