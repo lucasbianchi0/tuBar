@@ -21,9 +21,7 @@ const Item = ({data}) => {
         console.log(contar)
         
     }
-  
-
-
+    
   return (
     <div className='item-style'>
         <figure>
@@ -44,10 +42,7 @@ const Item = ({data}) => {
                     
                 </div>
             </div>
-           
-
         </div>
-        
     </div>
   )
 }

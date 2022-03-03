@@ -8,6 +8,7 @@ const ItemListContainer = () => {
 
   useEffect(()=>{
     setCatalogo(localidadesBaseDeDatos)
+    console.log(catalogo)
   })
       
 

@@ -1,22 +1,13 @@
 import React, {useState} from 'react'
 import { localidadesBaseDeDatos } from '../Datos/Productos'
 import './ItemDetail.css'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import ItemCount from '../ItemCount/ItemCount';
 
 
 const ItemDetail = ({info}) => {
-
-    const [contar, setContar] = useState(0);
-    const [heart, setHeart] = useState(<FavoriteBorderIcon />)
-
-   
-    const reservar = ()=>{ 
-        setContar(contar + 1)
-        setHeart(<FavoriteIcon className='heart-edit'/>)
-        console.log(contar)}
     const { imagen, nombre, precio, id, descripcion} = info;
-        
+    const productoSeleccionado = info;
+
   return (
     <div className='structure-containerdetail'>
         <div className='itemDetail-structure'>
@@ -28,15 +19,8 @@ const ItemDetail = ({info}) => {
                 <h1>{nombre}</h1>
                 <p>{descripcion}</p>
                 <p className='precio-item-detail'>{precio}</p>
-                <div className='estructura-botones-item'>
-                    <button data-id={id} onClick={reservar} className='btn-agregar'>Reservar</button>
-         
-                <div className='estructura-contador-item'> 
-                    <p>{contar}</p>
-                    <p>{heart}</p>
-                    
-                </div>
-            </div>
+                <ItemCount datosItem ={productoSeleccionado}/>
+        
         </div>
     </div>
     </div>
