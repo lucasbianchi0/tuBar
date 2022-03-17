@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React , {useState, useContext} from 'react';
 import padre from '../../assets/img/padre.png'
 import './Item.css'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -6,7 +6,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ItemListContainer from '../ItemListContainer/ItemListContainer';
 import { Link } from 'react-router-dom';
 import { localidadesBaseDeDatos } from '../Datos/Productos';
-
+import { useCartContext } from '../../Contexts/Context'
 
 
 const Item = ({data}) => {

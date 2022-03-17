@@ -6,27 +6,35 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Contacto from './pages/contacto/Contacto';
 import Home from './pages/contacto/Home/Home';
+import Cart from './pages/contacto/Cart/Cart';
+import {CartProvider} from './Contexts/Context'
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <header className="App-header">
-          <NavBar/>
-          <Routes>
-              {/* <Route path='' element ={}/> */}
-              <Route path='/contacto' element={<Contacto/>}/>
-              <Route path='/home' element={<Home/>}/>
-              <Route path='/items/:id' element ={<ItemDetailContainer/>}/>
-              <Route  path="/"   element={<ItemListContainer/>}/>
-          </Routes>
+    <>
+      <CartProvider>
+        <Router>
+          <div className="App">
+            <header className="App-header">
+              <NavBar/>
+              <Routes>
+                  
+                  <Route path='/contacto' element={<Contacto/>}/>
+                  <Route path='/home' element={<Home/>}/>
+                  <Route path='/items/:id' element ={<ItemDetailContainer/>}/>
+                  <Route path="/" element={<ItemListContainer/>}/>
+                  <Route path='/Cart/' element={<Cart/>}/>
+              </Routes>
+              
           
-      
-          
-        </header>
-      </div>
-    </Router>
-  );
+              
+            </header>
+          </div>
+        </Router>
+      </CartProvider>
+    </>
+  )
+  
 }
 
 export default App;

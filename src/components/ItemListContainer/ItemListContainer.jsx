@@ -2,16 +2,13 @@ import React, { useEffect,useState } from 'react'
 import './ItemListContainer.css'
 import Item from '../Item/Item'
 import { localidadesBaseDeDatos } from '../Datos/Productos'
+import { useCartContext } from '../../Contexts/Context'
+
 
 const ItemListContainer = () => {
-  const [catalogo, setCatalogo]= useState([])
-
-  useEffect(()=>{
-    setCatalogo(localidadesBaseDeDatos)
-    console.log(catalogo)
-  })
-      
-
+  
+  const {catalogo, setCatalogo} = useCartContext()
+    
   return (
     <div className='structure-itemlist'>
       <div className='container-itemlist'>

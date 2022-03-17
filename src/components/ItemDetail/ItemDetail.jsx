@@ -16,8 +16,8 @@ const ItemDetail = ({info}) => {
                 
             </figure>
             <div className='item-detail-text'>
-                <h1>{nombre}</h1>
-                <p>{descripcion}</p>
+                <h1 id='name-product'>{nombre}</h1>
+                <p id='descript-product'>{descripcion}</p>
                 <p className='precio-item-detail'>{precio}</p>
                 <ItemCount datosItem ={productoSeleccionado}/>
         
