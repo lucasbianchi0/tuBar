@@ -7,10 +7,10 @@ import { useCartContext } from '../../Contexts/Context'
 
 const ItemDetailContainer = () => {
 
-    const {cartCount} = useCartContext()
-    console.log(`djcjc`+ cartCount)
+    const {producto, setProducto} = useCartContext()
     
-    const [producto, setProducto]= useState([])
+    
+    // const [producto, setProducto]= useState([])
     const {id}=useParams()
     
     const obtenerProductDB = (nombreProducto) => {
@@ -31,7 +31,7 @@ const ItemDetailContainer = () => {
         }
         obtenerProducto(id)
         }, [id])
-        // console.log(producto)
+      
         return(
            <div>
                <ItemDetail info ={producto}/>

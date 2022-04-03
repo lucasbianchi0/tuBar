@@ -30,7 +30,7 @@ const Item = ({data}) => {
         <div>
             <h2>{data.nombre}</h2>
             <p>{data.descripcion}</p>
-            <p className='precio'>{data.precio}</p>
+            <p className='precio'>$ {data.precio}</p>
             <div className='estructura-botones-item'>
             
                 <Link to={`/items/${data.id}`}>

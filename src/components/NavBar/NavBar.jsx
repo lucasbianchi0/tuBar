@@ -8,7 +8,7 @@ import {CartContext} from '../../Contexts/Context'
 
 
 const NavBar = () => {
-  const {cartAmount} = useContext(CartContext)
+  const {cantidadCart} = useContext(CartContext)
   return (
     <div className='container-nav'>
       <div className='estructura-Navbar'>
@@ -21,7 +21,7 @@ const NavBar = () => {
             <Link to="/">Catalogo</Link>
             <Link to="/home">Home</Link>
             <Link to="/contacto">Contacto</Link>
-            <p>{cartAmount}</p>
+            <p>{cantidadCart()}</p>
           </ul>
           <div><CartWidget /></div>
         </div>

@@ -1,0 +1,38 @@
+
+.cart-container{
+    padding-top: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cartItemInfo{
+    display: flex;
+    background-color: rgb(235, 231, 231);
+    padding: 12px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+}
+
+.cartItem-info{
+    padding-left: 40px;
+}
+.Image{
+    width: 280px;
+    height: 220px;
+    border-radius: 15px;
+}
+
+.cartItemTitle{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.cartItem-info p{
+   margin-top: 8px;
+}
+
+.cartItemPrice{
+    color: var(--verde);
+    font-weight: 500;
+}
