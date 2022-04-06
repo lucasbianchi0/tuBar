@@ -49,15 +49,15 @@ export const CartProvider = ({children}) => {
     
     // const [cantidad, setCantidad]= useState(0)
 
-    useEffect(()=>{
-      setCatalogo(localidadesBaseDeDatos)
-    })
+    // useEffect(()=>{
+    //   setCatalogo(localidadesBaseDeDatos)
+    // })
 
     // agregar al carro
 
     const addToCarto =(item, contadorItem)=>{
-      if(carrito.some((product)=>product.id===item.id)){
       setShow(true)
+      if(carrito.some((product)=>product.id===item.id)){
       const copy = [...carrito]
       const repeatItemIndex = carrito.findIndex((product)=> product.id === item.id)
 
@@ -66,6 +66,7 @@ export const CartProvider = ({children}) => {
         contadorItem: copy[repeatItemIndex].contadorItem + contadorItem}
         setCarrito(copy)
         setContadorItem(0)
+        
       
       }else{
         setCarrito([...carrito,{...item, contadorItem}])

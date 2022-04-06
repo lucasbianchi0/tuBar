@@ -27,7 +27,7 @@ const ItemDetail = ({info}) => {
                   <ItemCount 
                   datosItem ={productoSeleccionado}
                   />
-                  <button onClick={()=>addToCarto(producto,contadorItem)} >Agregar plan b</button>
+                  <button onClick={()=>addToCarto(info,contadorItem)} >Agregar plan b</button>
 
 
                {
@@ -38,7 +38,8 @@ const ItemDetail = ({info}) => {
                     <button  >Terminar compra</button>
                   </Link>
                 </div>
-              </>: null
+              </>: 
+              <> <div><p></p></div></>
 
                }
             </div>

@@ -5,6 +5,7 @@ import CartWidget from '../Ui/Atoms/CartWidget/CartWidget';
 import 'react-router-dom'
 import { Link } from 'react-router-dom'
 import {CartContext} from '../../Contexts/Context'
+import {categoryId } from '../ItemListContainer/ItemListContainer'
 
 
 const NavBar = () => {
@@ -19,9 +20,10 @@ const NavBar = () => {
         <div className='navbar-right'>
           <ul>
             <Link to="/">Catalogo</Link>
-            <Link to="/home">Home</Link>
+            <Link to="/category/categoryId">Categoria</Link>
             <Link to="/contacto">Contacto</Link>
-            <p>{cantidadCart()}</p>
+            
+            {/* <p>{cantidadCart()}</p> */}
           </ul>
           <div><CartWidget /></div>
         </div>
